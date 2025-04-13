@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classes - ABC Fitness Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Our Classes</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="classes.html">Classes</a>
+      <a href="about.html">About Us</a>
+      <a href="stories.html">Success Stories</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="class-grid">
+      <div class="class-card">
+        <h3>Yoga</h3>
+        <p>Stretch, relax, and rejuvenate.</p>
+        <button onclick="addToSchedule('Yoga')">Add to Schedule</button>
+      </div>
+      <div class="class-card">
+        <h3>HIIT</h3>
+        <p>High-intensity interval training to burn fat fast.</p>
+        <button onclick="addToSchedule('HIIT')">Add to Schedule</button>
+      </div>
+    </section>
+    <button onclick="viewSchedule()">View Schedule</button>
+  </main>
+
+  <div id="scheduleModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>Your Schedule</h3>
+      <ul id="scheduleList"></ul>
+      <button onclick="clearSchedule()">Clear</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ABC Fitness Studio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

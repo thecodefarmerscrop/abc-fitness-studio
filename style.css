@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #F8F9FA;
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+  background: #007BFF;
+  color: white;
+  padding: 1em;
+}
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+main {
+  padding: 1em;
+}
+.class-grid {
+  display: flex;
+  gap: 1em;
+}
+.class-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+button {
+  background: #A6D608;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+button:hover {
+  background: #8DBB06;
+}
+.modal {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+}
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 1em;
+  width: 300px;
+}
+.hidden {
+  display: none;
+}
